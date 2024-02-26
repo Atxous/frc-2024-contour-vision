@@ -1,0 +1,10 @@
+^C:\USERS\JL255\DESKTOP\CODE\FRC_LOCALIZATION\BUILD\CMAKEFILES\C3ED8F88439351D82EE7D31DBD09D30A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/jl255/Desktop/Code/frc_localization -BC:/Users/jl255/Desktop/Code/frc_localization/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/jl255/Desktop/Code/frc_localization/build/frc_localization.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
